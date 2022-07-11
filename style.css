@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Lato:wght@700;900&family=Mochiy+Pop+P+One&family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family:; */
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(80, 104, 148);
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+
+.slider {
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+}
+.slider__content {
+    margin: 0 40px;
+    padding: 45px 20px;
+    border-radius: 25px;
+    overflow: hidden;
+
+}
+.slider__line {
+}
+.slider__card {
+    width: 320px;
+    background-color: #fff;
+    border-radius: 25px;
+}
+.card {
+}
+.card__img--content,
+.card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+} 
+.card__img--content{
+    position: relative;
+    row-gap: 5px;
+}
+.overlay {
+    position: absolute;
+   background-color: #071d58;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px 25px 0 25px;
+}
+.overlay ::before,
+.overlay::after{
+    content:'';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    width: 40px;
+    height: 40px;
+    background-color: #071d58;
+
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #fff;
+}
+.card__image--block {
+   position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 3px;
+}
+.card__image {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #4070f4;
+}
+
+.card__name {
+    font-size: 18px;
+    font-weight: 500;
+    color:#333;
+}
+.card__discriptions {
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+
+}
+.card__button{
+    border: none;
+    font-size: 16px;
+    color:#fff;
+    padding: 8px 16px;
+    background-color:#4070f4 ;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease ;
+
+}
+.card__button:hover{
+    background-color:#265df2 ;
+}
