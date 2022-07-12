@@ -1,4 +1,4 @@
-let swiper = new Swiper(".slider swiper", {
+let swiper = new Swiper(".slider__content", {
   slidesPerView: 3,
   spaceBetween: 30,
   slidesPerGroup: 3,
@@ -13,3 +13,4 @@ let swiper = new Swiper(".slider swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
